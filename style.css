@@ -1,0 +1,72 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+/*  This pattern is downloaded from www.toptal.com/designers/subtlepatterns/ 
+ If you need more, that's where to get'em. */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    background-image:url("./dark-paths.png");
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 15px;
+    width: 50%;
+    min-height: 150px;
+    padding: 15px;
+    background-color:rgba(255, 255, 255, 0.4);
+    border: 1px solid #000;
+
+}
+
+.login_input{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
+    height: 30px;
+    line-height: 20px;
+    color: #FFF;
+    padding-left: 5px;
+    border: none;
+}
+.login_input::placeholder{
+    color: #FFF;
+    opacity: 0.7;
+    
+}
+
+.login_button{
+    padding: 3px 0;
+    border: none;
+    border-radius: 25px;
+    height: 30px;
+    width: 50%;
+    background-color: rgb(161, 201, 211);
+    transition: background-color 0.1s ease-in-out
+}
+
+.login_button:hover{
+    cursor: pointer;
+    background-color: rgb(165, 206, 216)
+}
+
+.login_error{
+    margin-top: 10px;
+    color: #F00;
+}
+
+@media only screen and (min-width: 425px){
+    .login{
+        width: 300px;
+    }
+}

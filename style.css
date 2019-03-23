@@ -14,6 +14,7 @@ body{
     background-image:url("./dark-paths.png");
 }
 
+/* Login form */
 .login{
     display: flex;
     justify-content: center;
@@ -30,6 +31,7 @@ body{
 
 }
 
+/* Inputs */
 .login__input{
     width: 80%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -46,6 +48,7 @@ body{
     
 }
 
+/* Buttons */
 .login__buttonContainer{
     display: flex;
     justify-content: space-between;
@@ -67,6 +70,7 @@ body{
     background-color: rgb(165, 206, 216)
 }
 
+/* Link */
 .login__link{
     color: #000;
     text-decoration: none;
@@ -74,6 +78,7 @@ body{
     height: 100%;
 }
 
+/* Messeges(alert, info, success) */
 .login__message{
     box-sizing: border-box;
     margin-top: 10px;
@@ -97,12 +102,13 @@ body{
     color: #00F;
 }
 
-.login__message--succes{
+.login__message--success{
     border-color: #0F0;
     background-color: rgba(0, 255, 0, 0.2);
     color: #0F0;
 }
 
+/* Rules for screen with width bigger than 425px */
 @media only screen and (min-width: 425px){
     .login{
         width: 300px;

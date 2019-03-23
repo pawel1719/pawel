@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Login form -->
     <form action="" class="login">
-
+        <!-- Messeges from serwer(alert, info, login) -->
         <div class="login__message login__message--alert">Błędne dane!</div>
 
         <div class="login__message login__message--success">Wszystko ok!</div>
 
         <div class="login__message login__message--info">Ładna pogoda!</div>
-
+        <!-- Input for username -->
         <input placeholder="Username" type="text" class="login__input" name="login">
-
+        <!-- Input for password -->
         <input placeholder="Password" type="password" class="login__input" name="password">
-
+        <!-- Container for login and register button. It's necessarily to place one button next to second button. -->
         <div class="login__buttonContainer">
+            <!-- Login button. Send form to server -->
             <button type="submit" class="login__button">Log in!</button>
+            <!-- Register button. It moves us to register page -->
             <button class="login__button"><a href="#" class="login__link">Register</a></button>
         </div>
         
